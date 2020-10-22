@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'yogaJM'
-  spec.version = "1.0.0-pre"
+  spec.version = "1.0.0-alpha"
   spec.license =  { :type => 'MIT' }
   spec.homepage = 'https://github.com/JimiPlatform/yoga'
 
