@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.description = 'Yoga is a cross-platform layout engine enabling maximum collaboration within your team by implementing an API many designers are familiar with, and opening it up to developers across different platforms.'
 
   spec.authors = 'Jimi,Facebook'
-  spec.source = { :git => 'https://github.com/JimiPlatform/yoga.git' }
+  spec.source = { :git => 'https://github.com/JimiPlatform/yoga.git', :tag => "#{spec.version}" }
 
   spec.requires_arc = false
   spec.compiler_flags = [
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
       '-std=c++1y',
       '-fPIC'
   ]
-  spec.xcconfig = { 'VALID_ARCHS' => ['armv7s arm64 x86_64 armv7 arm64e'] }
+  spec.xcconfig = { 'VALID_ARCHS' => 'armv7s armv7 x86_64 arm64 arm64e' }
   spec.libraries = "c++"
   spec.platform     = :ios, "9.0"
   spec.ios.vendored_frameworks = 'yoga.framework'
