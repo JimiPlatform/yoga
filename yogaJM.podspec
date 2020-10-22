@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'yogaJM'
-  spec.version = "0.58.6"
+  spec.version = "1.0.58.6-pre"
   spec.license =  { :type => 'MIT' }
   spec.homepage = 'https://github.com/JimiPlatform/yoga'
 
@@ -19,10 +19,10 @@ Pod::Spec.new do |spec|
       '-std=c++1y',
       '-fPIC'
   ]
+  s.xcconfig = { 'VALID_ARCHS' => 'armv7s arm64 x86_64 armv7 arm64e' }
 
   spec.platforms = { :ios => "9.0"}
-  spec.source_files = 'yoga/**/*.{cpp,h}'
-  spec.public_header_files = 'yoga/{Yoga,YGEnums,YGMacros}.h'
+  s.ios.vendored_framework   = 'yoga.framework'
 end
 
 #校验指令
