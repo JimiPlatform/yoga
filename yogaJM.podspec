@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'yogaJM'
-  spec.version = "0.58.7-alpha"
+  spec.version = "0.58.6"
   spec.license =  { :type => 'MIT' }
   spec.homepage = 'https://github.com/JimiPlatform/yoga'
 
@@ -19,7 +19,6 @@ Pod::Spec.new do |spec|
       '-std=c++1y',
       '-fPIC'
   ]
-  spec.xcconfig = { 'VALID_ARCHS' => 'armv7s armv7 x86_64 arm64 arm64e' }
   spec.libraries = "c++"
   spec.platform     = :ios, "9.0"
   spec.ios.vendored_frameworks = 'yoga.framework'

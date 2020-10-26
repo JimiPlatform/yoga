@@ -13,23 +13,20 @@ Pod::Spec.new do |spec|
   spec.summary = 'Yoga is a cross-platform layout engine which implements Flexbox.'
   spec.description = 'Yoga is a cross-platform layout engine enabling maximum collaboration within your team by implementing an API many designers are familiar with, and opening it up to developers across different platforms.'
 
-  spec.authors = 'Facebook'
-  spec.source = { :git => 'https://github.com/facebook/react-native.git', :tag => 'v0.58.6' }
+  spec.authors = 'Jimi', 'Facebook'
+  spec.source = { :git => 'https://github.com/JimiPlatform/react-native.git', :tag => '0.58.6' }
 
   spec.module_name = 'yoga'
   spec.requires_arc = false
 
-
   # Pinning to the same version as React.podspec.
-  spec.platforms = { :ios => "9.0", :tvos => "9.2" }
+  spec.platforms = { :ios => "9.0" }
 
   # Set this environment variable when *not* using the `:path` option to install the pod.
   # E.g. when publishing this spec to a spec repo.
-  source_files = 'ReactCommon/yoga/**/*.{cpp,h}'
-  spec.source_files = source_files
+  spec.source_files = 'ReactCommon/yoga/**/*.{cpp,h}'
 
-  header_files = 'ReactCommon/yoga/**/{Yoga,YGEnums,YGMacros}.h'
-  spec.public_header_files = header_files
+  spec.public_header_files = 'ReactCommon/yoga/**/{Yoga,YGEnums,YGMacros}.h'
 end
 
 #打包命令
